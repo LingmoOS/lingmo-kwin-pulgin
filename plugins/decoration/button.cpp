@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2020 PandaOS Team.
+ * Copyright (C) 2023-2024 Lingmo OS Team.
  *
- * Author:     rekols <rekols@foxmail.com>
+ * Author:     Lingmo Team <lingmo@lingmo.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -61,7 +61,7 @@ void Button::paint(QPainter *painter, const QRect &repaintRegion)
 {
     Q_UNUSED(repaintRegion)
 
-    Cutefish::Decoration *decoration = qobject_cast<Cutefish::Decoration *>(this->decoration());
+    Lingmo::Decoration *decoration = qobject_cast<Lingmo::Decoration *>(this->decoration());
 
     if (!decoration)
         return;

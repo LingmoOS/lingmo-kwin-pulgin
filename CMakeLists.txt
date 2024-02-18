@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(cutefish-kwin-plugins)
+project(lingmo-kwin-plugins)
 
-set(PROJECT_NAME "cutefish-kwin")
+set(PROJECT_NAME "lingmo-kwin")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -15,8 +15,8 @@ install(FILES config/kglobalshortcutsrc DESTINATION /etc/xdg)
 install(FILES config/kwinrc DESTINATION /etc/xdg)
 install(FILES config/kwinrulesrc DESTINATION /etc/xdg)
 
-install(DIRECTORY scripts/cutefishlauncher DESTINATION /usr/share/kwin/scripts)
-install(DIRECTORY scripts/cutefish_squash DESTINATION /usr/share/kwin/effects)
-install(DIRECTORY scripts/cutefish_scale DESTINATION /usr/share/kwin/effects)
-install(DIRECTORY scripts/cutefish_popups DESTINATION /usr/share/kwin/effects)
-install(DIRECTORY tabbox/cutefish_thumbnail DESTINATION /usr/share/kwin/tabbox)
+install(DIRECTORY scripts/lingmolauncher DESTINATION /usr/share/kwin/scripts)
+install(DIRECTORY scripts/lingmo_squash DESTINATION /usr/share/kwin/effects)
+install(DIRECTORY scripts/lingmo_scale DESTINATION /usr/share/kwin/effects)
+install(DIRECTORY scripts/lingmo_popups DESTINATION /usr/share/kwin/effects)
+install(DIRECTORY tabbox/lingmo_thumbnail DESTINATION /usr/share/kwin/tabbox)

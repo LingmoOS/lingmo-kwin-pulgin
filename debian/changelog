@@ -1,5 +1,17 @@
-cutefish-kwin-plugins (0.8) UNRELEASED; urgency=low
+lingmo-kwin-plugins (2.0.2) UNRELEASED; urgency=low
 
-  * Initial release (CutefishOS)  <support@cutefishos.com>
+  * Initial release (LingmoOS)  <lingmo@lingmo.org>
 
-   -- CutefishOS Packaging Team <support@cutefishos.com>  Sat, 29 Jan 2022 03:19:02 +0800
+   -- Lingmo OS Team <lingmo@lingmo.org>  Sun, 18 Feb 2024 20:57:36 +0800
+
+lingmo-kwin-plugins (1.9.9-20) UNRELEASED; urgency=low
+
+  * Initial release (LingmoOS)  <lingmo@lingmo.org>
+
+   -- Lingmo OS Team <lingmo@lingmo.org>  Wed, 10 Jan 2024 23:08:25 +0800
+
+lingmo-kwin-plugins (1.9.9) UNRELEASED; urgency=low
+
+  * Initial release (LingmoOS)  <lingmo@lingmo.org>
+
+   -- Lingmo OS Team <lingmo@lingmo.org>  Mon, 18 Dec 2023 23:08:25 +0800

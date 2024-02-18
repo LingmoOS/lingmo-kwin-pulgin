@@ -8,7 +8,7 @@ import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kwin 2.0 as KWin
 
-import FishUI 1.0 as FishUI
+import LingmoUI 1.0 as LingmoUI
 
 // https://techbase.kde.org/Development/Tutorials/KWin/WindowSwitcher
 
@@ -36,18 +36,18 @@ KWin.Switcher {
         x: tabBox.screenGeometry.x + (tabBox.screenGeometry.width - dialog.width) / 2
         y: tabBox.screenGeometry.y + (tabBox.screenGeometry.height - dialog.height) / 2
 
-        FishUI.WindowHelper {
+        LingmoUI.WindowHelper {
             id: windowHelper
         }
 
-        FishUI.WindowBlur {
+        LingmoUI.WindowBlur {
             view: dialog
             geometry: Qt.rect(dialog.x, dialog.y, dialog.width, dialog.height)
             windowRadius: _background.radius
             enabled: windowHelper.compositing
         }
 
-        FishUI.WindowShadow {
+        LingmoUI.WindowShadow {
             view: dialog
             geometry: Qt.rect(dialog.x, dialog.y, dialog.width, dialog.height)
             radius: _background.radius
@@ -57,10 +57,10 @@ KWin.Switcher {
             id: _background
             anchors.fill: parent
             radius: windowHelper.compositing ? 14 : 0
-            color: FishUI.Theme.backgroundColor
-            opacity: windowHelper.compositing ? FishUI.Theme.darkMode ? 0.3 : 0.4 : 1.0
+            color: LingmoUI.Theme.backgroundColor
+            opacity: windowHelper.compositing ? LingmoUI.Theme.darkMode ? 0.3 : 0.4 : 1.0
 
-            border.color: FishUI.Theme.darkMode ? "#686868" : "#D9D9D9"
+            border.color: LingmoUI.Theme.darkMode ? "#686868" : "#D9D9D9"
             border.width: windowHelper.compositing ? 0 : 1
         }
 
@@ -199,7 +199,7 @@ KWin.Switcher {
                             Layout.fillWidth: true
                             elide: Text.ElideRight
                             horizontalAlignment: Text.AlignHCenter
-                            color: isCurrent ? FishUI.Theme.highlightedTextColor : FishUI.Theme.textColor
+                            color: isCurrent ? LingmoUI.Theme.highlightedTextColor : LingmoUI.Theme.textColor
                         }
                     }
                 } // GridView.delegate
@@ -209,9 +209,9 @@ KWin.Switcher {
 
                     Rectangle {
                         anchors.fill: parent
-                        anchors.margins: FishUI.Units.largeSpacing
+                        anchors.margins: LingmoUI.Units.largeSpacing
                         radius: _background.radius
-                        color: FishUI.Theme.highlightColor
+                        color: LingmoUI.Theme.highlightColor
                         opacity: 0.7
                     }
                 }

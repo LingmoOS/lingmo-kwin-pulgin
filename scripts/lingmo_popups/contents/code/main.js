@@ -19,8 +19,8 @@ var blocklist = [
 ];
 
 var allowlist = [
-    "cutefish-launcher cutefish-launcher",
-    "cutefish-screenshot cutefish-screenshot"
+    "lingmo-launcher lingmo-launcher",
+    "lingmo-screenshot lingmo-screenshot"
 ];
 
 function isPopupWindow(window) {
@@ -72,10 +72,10 @@ function isPopupWindow(window) {
     return false;
 }
 
-var cutefishPopupsEffect = {
+var lingmoPopupsEffect = {
     loadConfig: function () {
-        cutefishPopupsEffect.fadeInDuration = animationTime(100);
-        cutefishPopupsEffect.fadeOutDuration = animationTime(100) * 4;
+        lingmoPopupsEffect.fadeInDuration = animationTime(100);
+        lingmoPopupsEffect.fadeOutDuration = animationTime(100) * 4;
     },
     slotWindowAdded: function (window) {
         if (effects.hasActiveFullScreenEffect) {
@@ -93,7 +93,7 @@ var cutefishPopupsEffect = {
         window.fadeInAnimation = animate({
             window: window,
             curve: QEasingCurve.Linear,
-            duration: cutefishPopupsEffect.fadeInDuration,
+            duration: lingmoPopupsEffect.fadeInDuration,
             type: Effect.Opacity,
             from: 0.0,
             to: 1.0
@@ -115,7 +115,7 @@ var cutefishPopupsEffect = {
         window.fadeOutAnimation = animate({
             window: window,
             curve: QEasingCurve.OutQuart,
-            duration: cutefishPopupsEffect.fadeOutDuration,
+            duration: lingmoPopupsEffect.fadeOutDuration,
             type: Effect.Opacity,
             from: 1.0,
             to: 0.0
@@ -135,13 +135,13 @@ var cutefishPopupsEffect = {
         }
     },
     init: function () {
-        cutefishPopupsEffect.loadConfig();
+        lingmoPopupsEffect.loadConfig();
 
-        effect.configChanged.connect(cutefishPopupsEffect.loadConfig);
-        effects.windowAdded.connect(cutefishPopupsEffect.slotWindowAdded);
-        effects.windowClosed.connect(cutefishPopupsEffect.slotWindowClosed);
-        effects.windowDataChanged.connect(cutefishPopupsEffect.slotWindowDataChanged);
+        effect.configChanged.connect(lingmoPopupsEffect.loadConfig);
+        effects.windowAdded.connect(lingmoPopupsEffect.slotWindowAdded);
+        effects.windowClosed.connect(lingmoPopupsEffect.slotWindowClosed);
+        effects.windowDataChanged.connect(lingmoPopupsEffect.slotWindowDataChanged);
     }
 };
 
-cutefishPopupsEffect.init();
+lingmoPopupsEffect.init();

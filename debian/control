@@ -1,11 +1,11 @@
-Source: cutefish-kwin-plugins
+Source: lingmo-kwin-plugins
 Section: devel
 Priority: optional
-Maintainer: CutefishOS <cutefishos@foxmail.com>
+Maintainer: LingmoOS <lingmo@lingmo.org>
 Build-Depends: cmake,
                debhelper (>= 9),
                extra-cmake-modules,
-               kwin-dev,
+               kwin-dev (>= 4:5.27.13-lingmo-b3),
                libxcb-util-dev,
                libxcb-util0-dev,
                libkf5windowsystem-dev,
@@ -22,12 +22,12 @@ Build-Depends: cmake,
                qttools5-dev,
                qttools5-dev-tools
 Standards-Version: 4.5.0
-Homepage: https://cutefishos.com
+Homepage: https://lingmo.org
 
-Package: cutefish-kwin-plugins
+Package: lingmo-kwin-plugins
 Architecture: any
 Depends: qml-module-qtquick-controls2,
          qml-module-qtquick2,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: CutefishOS KWin Plugins
+Description: LingmoOS KWin Plugins

@@ -1,4 +1,4 @@
-project (cutefishdecoration)
+project (lingmodecoration)
 set(CMAKE_CXX_STANDARD 11)
 
 find_package(KF5CoreAddons REQUIRED)
@@ -14,11 +14,11 @@ set (decoration_SRCS
     resources.qrc
 )
 
-add_library (cutefishdecoration MODULE
+add_library (lingmodecoration MODULE
     ${decoration_SRCS}
 )
 
-target_link_libraries (cutefishdecoration
+target_link_libraries (lingmodecoration
     PUBLIC
         Qt5::Core
         Qt5::Gui
@@ -33,5 +33,5 @@ target_link_libraries (cutefishdecoration
         KDecoration2::KDecoration
 )
 
-install (TARGETS cutefishdecoration
+install (TARGETS lingmodecoration
          DESTINATION ${QT_PLUGINS_DIR}/org.kde.kdecoration2)
