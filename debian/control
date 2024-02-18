@@ -5,7 +5,7 @@ Maintainer: LingmoOS <lingmo@lingmo.org>
 Build-Depends: cmake,
                debhelper (>= 9),
                extra-cmake-modules,
-               kwin-dev (>= 4:5.27.13-lingmo-b3),
+               lingmo-kwin-dev (>= 4:5.27.13-lingmo-b3),
                libxcb-util-dev,
                libxcb-util0-dev,
                libkf5windowsystem-dev,
