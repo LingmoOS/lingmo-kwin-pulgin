@@ -21,6 +21,8 @@
 #ifndef ROUNDEDWINDOW_H
 #define ROUNDEDWINDOW_H
 
+#include <span>
+
 #include <kwineffects.h>
 #include <kwinglplatform.h>
 #include <kwinglutils.h>
