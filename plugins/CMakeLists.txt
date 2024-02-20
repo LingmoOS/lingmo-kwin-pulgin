@@ -24,6 +24,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-add_subdirectory(blur)
+# add_subdirectory(blur)
 add_subdirectory(decoration)
 add_subdirectory(roundedwindow)

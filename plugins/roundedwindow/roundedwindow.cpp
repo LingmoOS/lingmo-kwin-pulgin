@@ -167,7 +167,7 @@ static KWin::GLShader *getShader()
 
     auto shader = KWin::ShaderManager::instance()->generateCustomShader(traits, QByteArray(), source);
     //shaders.insert(direction, shader);
-    return shader;
+    return shader.get();
 }
 
 static KWin::GLTexture *getTexture(int borderRadius)
